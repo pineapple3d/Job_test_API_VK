@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Тестовое задание</title>
+</head>
+
+<body>
+<div>
+<p>вы вошли как {{myname}}</p>
+</div><ul>
+{% for item in list_to_show %}
+        <li><img src={{item["photo_50"]}} alt = "not yet"><p>{{item["first_name"]}}  {{item["last_name"]}}</p></li>
+
+{% endfor %}
+</ul>
+</body>
+</html>
+
